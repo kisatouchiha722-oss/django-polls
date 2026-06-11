@@ -1,7 +1,0 @@
-<h2>Вход в систему опросов</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Войти</button>
-</form>
-<p>Еще не зарегистрированы? <a href="{% url 'polls:register' %}">Регистрация</a></p>
